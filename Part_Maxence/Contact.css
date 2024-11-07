@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    background: url(Image_Maxence/fond.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1320px;
+    font-family: "Luckiest Guy", serif;
+}
+
+/*      Partie NAV      */
+header nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+header .nav-title{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: #fff;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+.burger-icon img {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.nav-menu {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: -250px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 60px;
+    transition: left 0.5s ease;
+}
+.nav-menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f7f7f7;
+    display: block;
+    transition: 0.3s;
+}
+.nav-menu img {
+    height: 15px;
+    width: 15px;
+    margin: 20px;
+}
+.nav-menu a:hover {
+    color: #e70e0e;
+}
+.nav-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-menu.active {
+    left: 0;
+}
+.nav-menu .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+/*      Partie formulaire      */
+form{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.596);
+    padding: 30px;
+    width: 500px;
+    height: 350px;
+    border-radius: 15px;
+}
+form h1{
+    font-size: 25px;
+    color: white;
+    letter-spacing: 1px;
+}
+form .separation{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+form .corps-formulaire{
+    display:flex;
+    flex-wrap:wrap;
+    margin-bottom: 30px;
+}
+img{
+    height: 20px;
+    width: 20px;
+    padding-top: 46px;
+    padding-right: 10px;
+    left: 0;
+    top: 25px;
+}
+.groupe{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #383838;
+    outline-color: #1f1f1f;
+    border-radius: 5px;
+    background-color: #383838;
+    color: #fff;
+    letter-spacing: 0.8px;
+}
+form .pied-formulaire{
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 20px;
+}
+form button{
+    background-color: #383838;
+    color: white;
+    font-family: "Luckiest Guy", serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+.icon{
+    display: flex;
+    flex-direction: row-reverse;
+    color: white;
+}
+textarea{
+    outline-color: #383838;
+    border-radius: 6px;
+    border: 1px solid #383838;
+    margin-top: 5px;   
+    resize: none;
+    height: 161px;
+    width: 250px;
+    background-color: #383838;
+    color: #fff;
+}
+.droite{
+    margin-left: 25px
+}
+.droite .groupe label{
+    color: #fff;
+}
+
+/*      Partie footer      */
+footer .footer-container .footer-reseaux .title{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 200px;
+    letter-spacing: 2px;
+}
+
+footer .footer-container .footer-reseaux .reseaux-img{
+    display: flex;
+    justify-content: center;
+}
+
+footer img{
+    height: 25px;
+    width: 25px;
+    margin: 30px 20px;
+}
+
+footer .footer-container .footer-cg{
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+
+/*      Partie popup      */
+
+#popup-overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 1;
+    display: none;
+}
+#popup-overlay.open{
+    display: block !important;
+}
+.popup-content{
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin-top: 28%;
+}
+.popup-exit{
+    color: rgba(0, 0, 0, 0.95);
+    font-size: 30px;
+    background: #fff;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+}
+
+
+/*      Partie responsive      */
+
+/* En dessous de 600px de largeur alors ... */
+@media screen and (max-width: 600px) {
+    body{
+        height: 1400px;
+    }
+    form{
+        margin-top: 50px;
+        width: 250px;
+        height: 550px;
+    }
+    textarea{
+        margin-left: -30px;
+    }
+    footer img{
+        margin-top: 5px;
+    }
+    footer .footer-container .footer-cg{
+        margin-top: 15px;
+    }
+
+
+    .popup-content{
+        margin-top: 70%;
+        margin-left: 25px;
+    }
+}
