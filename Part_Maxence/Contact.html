@@ -16,7 +16,7 @@
                     <li><a href="/Part_Iban/Accueil.html">Accueil</a></li>
                     <li><a href="/Part_Iban/Film.html">Films</a></li>
                     <li><a href="Contact.html">Contact</a></li>
-                    <li><a href="#">Histoire</a></li>
+                    <li><a href="/Part_Selmen/Histoire.html">Histoire</a></li>
                 </ul>
             </div>
             
@@ -37,8 +37,8 @@
             <div class="gauche">
                 <div class="icon">
                     <div class="groupe">
-                        <label>Votre prénom</label>
-                        <input type="text" required>
+                        <label >Votre prénom</label>
+                        <input id="prenom" placeholder="prenom" name="prenom" type="text" required>
                     </div>
                     <img src="https://img.icons8.com/?size=100&id=98957&format=png&color=ffffff">
                 </div>
@@ -46,14 +46,14 @@
                 <div class="icon">
                     <div class="groupe">
                         <label>Votre adresse e-mail</label>
-                        <input type="text" required>
+                        <input id="email" placeholder="email" name="email" type="text" required >
                     </div>
                     <img src="https://img.icons8.com/?size=100&id=86885&format=png&color=ffffff">
                 </div>
                 <div class="icon">
                     <div class="groupe">
                         <label>Votre téléphone</label>
-                        <input type="text" required>
+                        <input id="téléphone" placeholder="télépohone" name="téléphone" type="text" required>
                     </div>
                     <img src="https://img.icons8.com/?size=100&id=meHBdELO7dkE&format=png&color=ffffff">
                 </div>
@@ -61,11 +61,11 @@
             <div class="droite">
                 <div class="groupe">
                     <label>Message</label>
-                    <textarea required></textarea>
+                    <textarea id="message" placeholder="message" name="message" required></textarea>
             </div>
         </div>
         <div class="pied-formulaire">
-            <button onclick="togglePopup()">Envoyer le message</button>
+            <button onclick="remplis()">Envoyer le message</button>
         </div>
     </form>
     <div class="footer">
@@ -85,12 +85,6 @@
                 </div>
             </div>
         </footer>
-    </div>
-    <div id="popup-overlay">
-        <div class="popup-content">
-            <h3>Votre message à bien était envoyé !</h3>
-        </div>
-        <div class="popup-exit" onclick="togglePopup()">X</div>
     </div>
     <script src="Contact.js"></script>
 </body>
