@@ -95,8 +95,10 @@ header .nav-title{
     width: 180px;
     cursor: pointer;
 }
-.film_img:hover{
-    border: solid 2px #fff;
+.film_text{
+    width: 180px;
+    text-overflow: ellipsis;
+    letter-spacing: 1.5px;
 }
 
 

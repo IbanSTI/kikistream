@@ -38,14 +38,15 @@ async function fetchMovies() {
 }
 
 function createMovieCard(media) {
-    const {poster_path} = media;
+    const {title, name, poster_path, key} = media;
 
     const movieCard = document.createElement("div");
     movieCard.classList.add("movie_item")
 
     movieCard.innerHTML = `
-        <img src="https://image.tmdb.org/t/p/w500/${poster_path}" class="film_img">
-    `;
+        <img src="https://image.tmdb.org/t/p/w500/${poster_path}" class="film_img" onclick="window.open('https://www.youtube.com')"> 
+        <p class="film_text">${title || name}</p>
+    `; /* Quand on clique sur un film, cela renvoit sur youtube car nous n'avons pas accès au vrai lien. */
     return movieCard;
 }
 
