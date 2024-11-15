@@ -1,3 +1,4 @@
+/* Partie qui englobe tout */
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 *{
     margin: 0px;
@@ -7,7 +8,6 @@
     font-family: "Luckiest Guy", cursive;
     font-weight: 400;
 }
-
 body{
     background-image: url(Image_Iban/fond.png);
     background-size: cover;
@@ -16,13 +16,11 @@ body{
     height: 1080px;
 }
 
-/* Partie NAV */
-
+/* Partie de la navbar */
 header nav{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-
 header .nav-title{
     display: flex;
     justify-content: center;
@@ -31,9 +29,6 @@ header .nav-title{
     margin-top: 30px;
     letter-spacing: 2px;
 }
-
-/* Menu Hamburger */
-
 .burger-icon img {
     display: flex;
     width: 60px;
@@ -41,8 +36,6 @@ header .nav-title{
     margin-left: 20px;
     margin-top: 30px;
 }
-
-/* Sidenav menu */
 .nav-menu {
     height: 100%;
     width: 250px;
@@ -54,8 +47,6 @@ header .nav-title{
     padding-top: 60px;
     transition: left 0.5s ease;
 }
-
-/* Sidenav menu lien */
 .nav-menu a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -64,29 +55,22 @@ header .nav-title{
     display: block;
     transition: 0.3s;
 }
-
 .nav-menu img {
     height: 15px;
     width: 15px;
     margin: 20px;
 }
-
 .nav-menu a:hover {
     color: #e70e0e;
 }
-
 .nav-menu ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-
-/* Active class */
 .nav-menu.active {
     left: 0;
 }
-
-/* Close btn */
 .nav-menu .close {
     position: absolute;
     top: 0;
@@ -100,7 +84,6 @@ main{
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
 main a{
     height: 300px;
     width: 500px;
@@ -108,7 +91,6 @@ main a{
     margin: 150px 25px 0px 25px;
     transition: transform 1s ease-in-out
 }
-
 main a h2{
     color: white;
     display: flex;
@@ -117,15 +99,12 @@ main a h2{
     margin-top: 120px;
     transition: transform 0.5s ease-in-out
 }
-
-/* Partie Main Hover */
 main a h2:hover{
     transform: scale(1.2);
     color: #e70e0e;
 }
 
-/* Partie Footer */
-
+/* Partie du footer */
 footer .footer-container .footer-reseaux .title{
     display: flex;
     justify-content: center;
@@ -133,18 +112,15 @@ footer .footer-container .footer-reseaux .title{
     margin-top: 200px;
     letter-spacing: 2px;
 }
-
 footer .footer-container .footer-reseaux .reseaux-img{
     display: flex;
     justify-content: center;
 }
-
 footer img{
     height: 25px;
     width: 25px;
     margin: 30px 20px;
 }
-
 footer .footer-container .footer-cg{
     color: white;
     margin-top: 30px;
@@ -153,9 +129,6 @@ footer .footer-container .footer-cg{
     justify-content: center;
     letter-spacing: 1px;
 }
-
-
-
 
 
 

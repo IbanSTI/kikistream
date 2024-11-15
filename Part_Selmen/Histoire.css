@@ -1,3 +1,4 @@
+/* Partie qui englobe tout */
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 *{
     margin: 0px;
@@ -7,7 +8,6 @@
     font-family: "Luckiest Guy", cursive;
     font-weight: 400;
 }
-
 body{
     background-image: url(Image_Selmen/fond.png);
     background-size: cover;
@@ -16,13 +16,11 @@ body{
     height: 1580px;
 }
 
-/* Partie NAV */
-
+/* Partie navbar */
 header nav{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-
 header .nav-title{
     display: flex;
     justify-content: center;
@@ -33,7 +31,6 @@ header .nav-title{
 }
 
 /* Menu Hamburger */
-
 .burger-icon img {
     display: flex;
     width: 60px;
@@ -41,8 +38,6 @@ header .nav-title{
     margin-left: 20px;
     margin-top: 30px;
 }
-
-/* Sidenav menu */
 .nav-menu {
     height: 100%;
     width: 250px;
@@ -54,8 +49,6 @@ header .nav-title{
     padding-top: 60px;
     transition: left 0.5s ease;
 }
-
-/* Sidenav menu lien */
 .nav-menu a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -64,29 +57,22 @@ header .nav-title{
     display: block;
     transition: 0.3s;
 }
-
 .nav-menu img {
     height: 15px;
     width: 15px;
     margin: 20px;
 }
-
 .nav-menu a:hover {
     color: #e70e0e;
 }
-
 .nav-menu ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-
-/* Active class */
 .nav-menu.active {
     left: 0;
 }
-
-/* Close btn */
 .nav-menu .close {
     position: absolute;
     top: 0;
@@ -94,6 +80,7 @@ header .nav-title{
     font-size: 36px;
 }
 
+/* Partie du main */
 main h2{
     color: white;
     margin-top: 60px;
