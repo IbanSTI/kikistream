@@ -11,6 +11,8 @@ Iban, directeur principale du projet.
 
 Pour l'installation :
   - Récupérer le fichier compressé et ajouter le sur votre bureau.
+        - Cliquer sur le bouton "Code" en vert.
+        - Cliquer sur le bouton "fichier ZIP" en bas.
   - L'ouvrir avec git bash et la ligne de code "code ."
   - Une fois ouvert, vous pouvez désormais ouvrir depuis votre éditeur de code n'importe quel fichier html.
 
